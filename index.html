@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HanheldFriendly" content="true" />
+
+    <!-- Meta etiquetas PWA para Apple -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="favicons/android-chrome-512x512.png"
+    />
+
+    <!-- Configuración General PWA -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Meta etiquetas generales -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>BIG BANG BATTLE</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Big Bang Battle</h1>
+      <div class="game_select height-100" id="game_select">
+        <p id="label">Choose your weapon</p>
+
+        <div class="row">
+          <button class="game__button" onclick="startGame('🗿')">🗿</button>
+          <button class="game__button" onclick="startGame('✂️')">✂️</button>
+          <button class="game__button" onclick="startGame('📄')">📄</button>
+          <button class="game__button" onclick="startGame('🦎')">🦎</button>
+          <button class="game__button" onclick="startGame('🖖')">🖖</button>
+        </div>
+      </div>
+      <div class="result height-0" id="battle">
+        <p id="stage">V.S.</p>
+        <p id="result"></p>
+        <button id="restart" class="btn_restart">Restart</button>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
